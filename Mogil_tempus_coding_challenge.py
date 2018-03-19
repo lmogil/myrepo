@@ -106,6 +106,9 @@ for line in gzip.open(exac_vcf):
 #chrfile= '/Users/laurenmogil/Downloads/Challenge_data.vcf'
 #open a file to output annotation 
 outfile = open(chrpath+"vcf_challenge_annotation_use.txt","w")
+#output header of annotation file
+#header columns defined below
+#Variant_id, type of variation, sequence depth, number of reads supporting variation, percent reads supporting variation vs ref, allele freq. from challenge vcf file, allele freq. from ExAC, clinvar measureset id, gene associated with variant
 outfile.write('Variant_ID'+'\t'+'Type_vars'+'\t'+'Seq_depth'+'\t'+'reads_vars'+'\t'+'percent_reads_support_vars'+'\t'+'AF_challenge'+'\t'+'AF_ExAC'+'\t'+'Clinvar_id'+'\t'+'Gene'+'\n')
 
 
